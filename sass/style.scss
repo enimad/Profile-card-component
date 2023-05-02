@@ -1,0 +1,97 @@
+@import "libs/normalize.scss";
+@import "libs/border-box.scss";
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+    background-color: hsl(185, 75%, 39%);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: linear-gradient(to right bottom, #46fcff, #1f939bae, #1f939bae, #1f939bae, #46fcff);
+}
+
+h1 {
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 0px 85px 25px rgba(84, 84, 84, 0.25);
+    transition: 1s;
+
+    &:hover {
+        box-shadow: 0px 0px 100px 55px rgba(33, 33, 33, 0.25);
+    }
+}
+
+.card-pattern {
+    border-radius: 20px 20px 0 0;
+}
+
+.ppicture {
+    margin: -48px 0 0;
+    border-radius: 100%;
+    border: solid white 4px;
+}
+
+.pinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .name {
+        font-weight: 700;
+
+        & span {
+            margin-left: 5px;
+            font-weight: 400;
+            color: hsl(0, 0%, 59%);
+        }
+    }
+
+    & .city {
+        font-size: 14px;
+        margin: -5px 0 20px;
+        color: hsl(0, 0%, 59%);
+    }
+}
+
+.pstats {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: solid lightgrey 1px;
+    padding: 25px;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .bold {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        & .small {
+            font-size: 12px;
+            color: hsl(0, 0%, 59%);
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
+
+}
